@@ -1,0 +1,18 @@
+//printing-array-elements-with-comma-delimiters
+function printArray(array){
+	var finalValue = '';
+	for(var a of array){
+		finalValue = finalValue + a +",";
+	}
+	var x = finalValue.endsWith(",");
+	if(x){
+		var last = finalValue.lastIndexOf(',');
+		//console.log(last);
+		finalValue =  finalValue.substring(0,last);
+	}
+	//console.log(finalValue);
+	return finalValue;
+}
+
+var array = ["h","o","l","a"];
+printArray(array);
