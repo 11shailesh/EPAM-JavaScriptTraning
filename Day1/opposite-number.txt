@@ -1,13 +1,6 @@
 //opposite-number
 function opposite(number) {
-	if(!isNaN(number)){
-		number = -1 * number;
-		//console.log(number);
-	}
-	else{
-		console.log('Please enter Valid Number');
-	}
-	return number;
+	return (-1) * number;
 }
 
 var number = "-10";

@@ -1,15 +1,18 @@
 //basic-mathematical-operations
-function rentalCarCost(d) {
-	if(d < 3 ){
-		return d * 40 ;
-	}
-	else if ( d >= 3 && d < 7){
-		return (d * 40) - 20;
-	}
-	else if(d >= 7){
-		return (d * 40) - 50 ;
-	}
+function basicOp(operation, value1, value2) {
+    switch (operation) {
+        case '+':
+            return value1 + value2;
+        case '-':
+            return value1 - value2;
+        case '*':
+            return value1 * value2;
+        case '/':
+            return value1 / value2;
+        default:
+            return 0;
+    }
 }
 
-var dayValue = 5;
-rentalCarCost(dayValue);
+var op = '+'; var v1=4; var v2=5;
+basicOp(op,v1,v2);
