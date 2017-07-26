@@ -1,16 +1,12 @@
-//transportation-on-vacation
 function rentalCarCost(d) {
-  var total = (40 * d),
-    discount = 0;
+  var cost = (40 * d),
+    total = 0;
   if (d < 3) {
-    discount = total;
+    total = cost;
   } else if (d >= 3 && d < 7) {
-    discount = total - 20;
+    total = cost - 20;
   } else {
-    discount = total - 50;
+    total = cost - 50;
   }
-  return discount;
+  return total;
 }
-
-//var dayValue = 5;
-//rentalCarCost(dayValue);ayValue);

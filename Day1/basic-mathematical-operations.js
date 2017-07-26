@@ -1,4 +1,3 @@
-//basic-mathematical-operations
 function basicOp(operation, value1, value2) {
   var result = 0;
   switch (operation) {
@@ -17,6 +16,3 @@ function basicOp(operation, value1, value2) {
   }
   return result;
 }
-
-//var op = '+'; var v1 = 4, var v2 = 4;
-//basicOp(op,v1,v2);
