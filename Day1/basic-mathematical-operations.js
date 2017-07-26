@@ -1,18 +1,22 @@
 //basic-mathematical-operations
 function basicOp(operation, value1, value2) {
-    switch (operation) {
-        case '+':
-            return value1 + value2;
-        case '-':
-            return value1 - value2;
-        case '*':
-            return value1 * value2;
-        case '/':
-            return value1 / value2;
-        default:
-            return 0;
-    }
+  var result = 0;
+  switch (operation) {
+    case '+':
+      result = value1 + value2;
+      break;
+    case '-':
+      result = value1 - value2;
+      break;
+    case '/':
+      result = value1 / value2;
+      break;
+    case '*':
+      result = value1 * value2;
+      break;
+  }
+  return result;
 }
 
-var op = '+'; var v1=4; var v2=5;
-basicOp(op,v1,v2);
+//var op = '+'; var v1 = 4, var v2 = 4;
+//basicOp(op,v1,v2);
