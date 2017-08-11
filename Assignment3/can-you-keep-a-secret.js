@@ -1,5 +1,5 @@
 function createSecretHolder(secret) {
-    return secretObj = {
+    return {
         getSecret: function () {
             return secret;
         },
