@@ -7,4 +7,3 @@ function countWords(str) {
   }
   return stingCount;
 }
-
